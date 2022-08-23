@@ -6,7 +6,7 @@
         <title>Booki</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/7e9e82b64c.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,5 +14,85 @@
 
     <body>
         
+        <!--navbar avec logo + "hébergements" + "activités"-->
+
+        <header>
+            <!--logo-->
+            <div>
+                <img class="logo" src="assets/logo/Booki.png" alt="logo_booki">
+            </div>
+
+            <!--navbar-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>              
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="introduction">
+                <!--h1 + h2-->
+                <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+                <p style="margin-bottom: 30px">En plein centre ville ou en pleine nature</p>
+
+                <!--barre de recherche-->
+                <form method="post" action="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input class="searchbar" type="text" name="ville" placeholder="Marseille, France" />
+                    <button class="search-button" type="submit">
+                        <a href="#" style="margin: 0;">
+                            <span class="text-button-search">Rechercher</span>
+                            <span class="search-icon"><i class="fas fa-search"></i></span>
+                        </a>
+                    </button>
+                </form>
+
+                <!--filtres + btn1 + btn2 + btn3 + btn4-->
+                <div class="filter">
+                    <h3 style="margin-top: 40px;">Filtres</h3>
+                    <div class="container-filter">
+                        <p class="filter-economic"><a href="#" class="button-filter"><i class="fa-solid fa-money-bill-wave fa-lg"></i>Economique</a></p>
+                    </div>
+                    <div class="container-filter">
+                        <p class="filter-family"><a href="#" class="button-filter"><i class="fa-solid fa-child-reaching fa-lg"></i>Familial</a></p>
+                    </div>
+                    <div class="container-filter">
+                        <p class="filter-romance"><a href="#" class="button-filter"><i class="fa-solid fa-heart fa-lg"></i>Romantique</a></p>
+                    </div>
+                    <div class="container-filter">
+                        <p class="filter-animal"><a href="#" class="button-filter"><i class="fa-solid fa-dog fa-lg"></i>Animaux autorisés</a></p>
+                    </div>
+                </div>
+
+                <!--infos-->
+                <div class="container-infos">
+                    <p class="infos"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+
+            </section>
+            <!--section hébergements-->
+            <section id="hebergements">
+                <!--div gauche "hébergements à Marseille" + div x6 + a "afficher plus"-->
+
+
+                <!--div droite "les plus populaires" + div x3-->
+
+            </section>
+
+            <!--section activités-->
+            <section id="activites">
+                <!--div "activités à Marseille" + div x6-->
+
+            </section>
+
+        </main>
+
+        <footer>
+            <!--footer + div x3-->
+
+        </footer>   
+
     </body>
 </html>
