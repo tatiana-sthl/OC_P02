@@ -28,6 +28,7 @@ header {
 .logo {
     border-style: none;
     width: 100px;
+    margin: 0;
 }
 
 .navbar {
@@ -102,6 +103,9 @@ a {
 
 /* introduction */
 
+#introduction {
+    margin: 0;
+}
 
 form {
     margin: 0;
@@ -250,4 +254,125 @@ form {
     border-radius: 20px;
     padding: 5px 10px;
     margin-right: 10px;
+}
+
+
+
+/*hébergements*/
+
+
+#hebergements {
+    display: flex;
+    float: left;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 59%;
+}
+
+.card-row {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin:  10px 10px;
+}
+
+.card {
+    width: 220px;
+    height: 180px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 15px #bdbdbd;
+    transition: transform 300ms;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card > img {
+    border-radius: 15px 15px 0 0;
+    width: 210px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.title-card {
+    margin: 5px 0 5px 8px;
+}
+
+.p-card {
+    margin: 0 5px 5px 8px;
+    font-size: 13px;
+}
+
+.fa-star {
+    margin: 0;
+    color: #0065fc;
+}
+    
+.star-grey {
+    color: #d0d5db;
+}
+
+.star-stack {
+    margin: 8px;
+}
+
+b{
+    margin: 0;
+}
+
+#most-popular {
+    display: flex;
+    background-color: #F2F2F2;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.card-row-popular {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin:  1.4px 10px;
+}
+
+.card-popular {
+    width: 350px;
+    height: 150px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 15px #bdbdbd;
+    transition: transform 300ms;
+}
+
+.card-popular:hover {
+    transform: translateY(-5px);
+}
+
+.card-popular > img {
+    display: block;
+    float: left;
+    border-radius: 15px 0 0 15px;
+    width: 130px;
+    height: 138px;
+    object-fit: cover;
+    margin: 0 15px 0 0;
+}
+
+.title-card-popular {
+    margin: 0 0 10px 0;
+}
+
+.p-card-popular {
+    margin: 0 0 50px 0;
+    font-size: 13px;
+}
+
+.star-title {
+    color: black;
 }
