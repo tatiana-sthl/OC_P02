@@ -45,7 +45,7 @@ header {
     > ul
     > li
     > a {
-        padding: 54px 0 0 0;
+        padding: 45px 0 0 0;
     }
 
 a {
@@ -325,8 +325,10 @@ b{
     margin: 0;
 }
 
+
 #most-popular {
     display: flex;
+    float: right;
     background-color: #F2F2F2;
     width: 30%;
     border-radius: 20px;
@@ -375,4 +377,36 @@ b{
 
 .star-title {
     color: black;
+    margin: 0 0 0 110px;
 }
+
+@media (max-width: 768px) {
+    #most-popular {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        border-radius: inherit;
+    }
+
+    .card-row-popular {
+        margin:  0 -10px;
+    }
+
+    .star-title {
+        margin-left: 46px;
+    }
+
+    #hebergements {
+        background-color: transparent;
+    }
+
+    .card {
+        width: 325px;
+        margin: 0;
+    }
+
+    .card > img {
+        width: 315px;
+    }
+}
+
