@@ -150,6 +150,11 @@ form {
 }
 
 @media (max-width: 992px) {
+
+    #introduction {
+        margin: 0 0 0 20px;
+    }
+
     .text-button-search {
         display: none;
     }
@@ -172,6 +177,11 @@ form {
 
 
 @media (max-width: 768px) {
+
+    #introduction {
+        margin: 0 0 0 20px;
+    }
+
     .text-button-search {
         display: none;
     }
@@ -427,16 +437,17 @@ form {
     #section1 {
         display: flex;
         flex-direction: column-reverse;
+        margin: 0 20px 0 0;
     }
 
     .accommodations,
     .most-popular {
         width: 100%;
-        margin: 0;
     }
 
     .accommodations {
         background-color: transparent;
+        margin: 0 20px 0 20px;
     }
 
     .card-row {
@@ -444,9 +455,23 @@ form {
         width: 100%;
         margin: 10px 0;
     }
+
+    .most-popular {
+        border-radius: 0;
+    }
+
+    .see-more {
+        padding: 0;
+    }
+
 }
 
 @media (max-width: 992px) {
+
+    #section1 {
+        margin: 0 20px 0 0;
+    }
+
     .star-stack-popular {
         margin-top: 25px;
     }
@@ -467,21 +492,17 @@ form {
 .activities {
     display: flex;
     flex-direction: row;
+    width: 93.5%;
+    height: 500px;
 }
 
 .column {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.column 
-    > div {
-        flex: 1;
+    flex-direction: column; 
+    width: 100%
 }
 
 .card-row-activities {
-    width: 27%;
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 15px #bdbdbd;
@@ -494,24 +515,152 @@ form {
 .card-row-activities
     > a {
     width: 100%;
+    height: 100%;
 }
 
-.img-activities-container {
+.img-activities-container-1,
+.img-activities-container-4 {
     width: 100%;
-    height: 120px;
-    margin-bottom: 10px;
+    height: 88%;
 }
 
-.img-activities-container  
-    > img {
-        width: 100%;
-        height: 100%; 
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
+.img-activities-container-2 {
+    width: 100%;
+    height: 78%;
+}
+
+.img-activities-container-3 {
+    width: 100%;
+    height: 68%;
+}
+
+.img-activities-container-5 {
+    width: 100%;
+    height: 70%;
+}
+
+.img-activities-container-6 {
+    width: 100%;
+    height: 77%;
+}
+
+.img-activities {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.div-1 {
+    height: 100%;
+    margin: 20px 20px 20px 0;
+}
+
+.div-2 {
+    height: 50%;
+    margin: 20px;
+}
+
+.div-3 {
+    height: 34%;
+    margin: 20px;
+}
+
+.div-4 {
+    height: 100%;
+    margin: 20px;
+}
+
+.div-5 {
+    height: 39%;
+    margin: 20px 0 20px 20px;
+}
+
+.div-6 {
+    height: 45%;
+    margin: 20px 0 20px 20px;
+}
+
+.title-card-activities {
+    margin: 0 0 0 15px;
+}
+
+.title-card-activities-6 {
+    margin: -4px 0 0 15px;
+}
+
+@media (max-width: 768px) {
+    #section2 {
+        margin: 0 20px;
     }
 
-.text-activities {
-    
+    .activities {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3,
+    .div-4,
+    .div-5,
+    .div-6 {
+        margin: 10px 0 10px 0;
+        width: 100%;
+        height: 150px;
+    }
+
+    .img-activities-container-1,
+    .img-activities-container-2,
+    .img-activities-container-3,
+    .img-activities-container-4,
+    .img-activities-container-5,
+    .img-activities-container-6 {
+        width: 100%;
+        height: 65%;
+    }
+
+    .title-card-activities 
+        > h4 {
+            margin: 10px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    #section2 {
+        margin: 0 20px;
+    }
+
+    .activities {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3,
+    .div-4,
+    .div-5,
+    .div-6 {
+        margin: 10px 0 10px 0;
+    }
+
+    .img-activities-container-1,
+    .img-activities-container-2,
+    .img-activities-container-3,
+    .img-activities-container-4,
+    .img-activities-container-5,
+    .img-activities-container-6 {
+        width: 100%;
+        height: 65%;
+    }
+
+    .title-card-activities 
+        > h4 {
+            margin: 10px 0;
+    }
 }
 
 /* footer */
@@ -523,7 +672,7 @@ footer {
     width: 100%;
     line-height: 2em;
     padding: 20px 50px;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .about {
