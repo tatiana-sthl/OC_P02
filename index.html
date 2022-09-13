@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Booki</title>
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
         <script src="https://kit.fontawesome.com/7e9e82b64c.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,14 +19,14 @@
         <header>
             <!--logo-->
             <div>
-                <img class="logo" src="assets/logo/Booki.png" alt="logo_booki">
+                <img class="logo" src="./assets/images/logo/Booki.png" alt="logo_booki">
             </div>
 
             <!--navbar-->
             <nav class="navbar">
                 <ul>
-                    <li><a href="#hebergements">Hébergements</a></li>
-                    <li><a href="#activites">Activités</a></li>              
+                    <li><a href="#section1">Hébergements</a></li>
+                    <li><a href="#section2">Activités</a></li>              
                 </ul>
             </nav>
         </header>
@@ -42,7 +42,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                     <input class="searchbar" type="text" name="ville" placeholder="Marseille, France" />
                     <button class="search-button" type="submit">
-                        <a href="#" style="margin: 0;">
+                        <a href="#">
                             <span class="text-button-search">Rechercher</span>
                             <span class="search-icon"><i class="fas fa-search"></i></span>
                         </a>
@@ -174,7 +174,7 @@
                     <div class="most-popular-container">
                         <a href="#" class="card-row-popular">
                             <div class="img-accommodations-container-popular">
-                                <img class="img-accommodations-popular" src="/assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                                <img class="img-accommodations-popular" src="./assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
                             </div>
                             <div class="text-accommodations-popular">
                                 <h4 class="title-card-popular">Auberge La Cannebière</h4>
@@ -184,7 +184,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="card-row-popular" href="#">
+                        <a href="#" class="card-row-popular">
                             <div class="img-accommodations-container-popular">
                                 <img class="img-accommodations-popular" src="/assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
                             </div>
@@ -196,7 +196,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="card-row-popular" href="#">
+                        <a href="#" class="card-row-popular">
                             <div class="img-accommodations-container-popular">
                                 <img class="img-accommodations-popular" src="/assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
                             </div>
@@ -295,31 +295,33 @@
 
         <footer>
             <!--footer + div x3-->
-            <div class="about">
-                <h3>A propos</h3>
-                <ul>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                </ul>
-            </div>
+            <div class="footer">
+                <div class="about">
+                    <h3>A propos</h3>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                    </ul>
+                </div>
 
-            <div class="our-accommodations">
-                <h3>Nos hébergements</h3>
-                <ul>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                </ul>
+                <div class="our-accommodations">
+                    <h3>Nos hébergements</h3>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                    </ul>
 
-            </div>
+                </div>
 
-            <div class="support">
-                <h3>Assistance</h3>
-                <ul>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                </ul>
+                <div class="support">
+                    <h3>Assistance</h3>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                    </ul>
 
+                </div>
             </div>
 
         </footer>   

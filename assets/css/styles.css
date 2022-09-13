@@ -12,13 +12,6 @@ header {
     margin: 0 50px;
 }
 
-@media (max-width: 992px) {
-    header {
-        justify-content: center;
-        margin: 0;
-    }
-}
-
 .logo {
     border-style: none;
     width: 100px;
@@ -62,39 +55,6 @@ a {
 }
 
 
-@media (max-width: 768px) {
-    header {
-        display: block;
-        text-align: center;
-    }
-
-    .logo {
-        border-style: none;
-        width: 100px;
-    }
-    
-    .navbar
-        > ul {
-            padding: 0;
-            justify-content: center;
-        }
-
-    .navbar 
-        > ul
-        > li {
-            border-bottom: solid 3px #f2f2f2;
-        }
-
-    .navbar 
-        > ul
-        > li:hover {
-            border-top: transparent;
-            border-bottom: solid 2px #0065fc;
-        }
-}
-
-
-
 /* introduction */
 
 #introduction {
@@ -135,70 +95,14 @@ form {
     padding: 13.8px;
 }
 
+.search-icon {
+    display: none;
+}
 
 .text-button-search {
     color: white;
     font-weight: bold;
     margin: 0;
-}
-
-
-@media (min-width: 993px) {
-    .search-icon {
-        display: none;
-    }
-}
-
-@media (max-width: 992px) {
-
-    #introduction {
-        margin: 0 0 0 20px;
-    }
-
-    .text-button-search {
-        display: none;
-    }
-
-    .search-button {
-        border-radius: 15px;
-        margin-left: -10px;
-    }
-
-    .search-icon {
-        margin: 0;
-        color: white;
-    }
-
-    .fa-search {
-        margin: 0;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-
-    #introduction {
-        margin: 0 0 0 20px;
-    }
-
-    .text-button-search {
-        display: none;
-    }
-
-    .search-button {
-        border-radius: 15px;
-        margin-left: -10px;
-    }
-
-    .search-icon {
-        margin: 0;
-        color: white;
-    }
-
-    .fa-search {
-        margin: 0;
-    }
 }
 
 .filter {
@@ -262,15 +166,6 @@ form {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .infos {
-        display: flex;
-        align-items: center;
-    }
-
-    
-}
-
 .fa-info {
     color: #0065fc;
     border: solid 2px #F2F2F2;
@@ -290,7 +185,7 @@ form {
 
 
 .h2-section1 {
-    margin: 30px 15px;
+    margin: 40px 0 20px 40px;
 }
 
 .accommodations {
@@ -310,7 +205,7 @@ form {
 .card-row {
     margin: 15px;
     padding: 5px;
-    width: 27%;
+    width: 26%;
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 15px #bdbdbd;
@@ -357,22 +252,20 @@ form {
 }
 
 .see-more {
-    padding: 15px 0 15px 20px;
+    margin: 40px;
 }
 
 .most-popular {
     width: 30%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 10px;
 }
 
 .title-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 22px 20px 15px 20px;
 }
 
 .star-title {
@@ -390,7 +283,7 @@ form {
 .card-row-popular {
     display: flex;
     width: 90%;
-    margin: 20px 10px;
+    margin: 0 10px 20px 10px;
     padding: 5px;
     border-radius: 20px;
     background-color: white;
@@ -433,51 +326,6 @@ form {
     margin-top: 50px;
 }
 
-@media (max-width: 768px) {
-    #section1 {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0 20px 0 0;
-    }
-
-    .accommodations,
-    .most-popular {
-        width: 100%;
-    }
-
-    .accommodations {
-        background-color: transparent;
-        margin: 0 20px 0 20px;
-    }
-
-    .card-row {
-        display: flex;
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .most-popular {
-        border-radius: 0;
-    }
-
-    .see-more {
-        padding: 0;
-    }
-
-}
-
-@media (max-width: 992px) {
-
-    #section1 {
-        margin: 0 20px 0 0;
-    }
-
-    .star-stack-popular {
-        margin-top: 25px;
-    }
-}
-
-
 
 /* section2 = activités */
 
@@ -492,7 +340,7 @@ form {
 .activities {
     display: flex;
     flex-direction: row;
-    width: 93.5%;
+    width: 92%;
     height: 500px;
 }
 
@@ -589,7 +437,149 @@ form {
     margin: -4px 0 0 15px;
 }
 
+
+/* footer */
+
+footer {
+    background-color:#F2F2F2;
+    margin-top: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    line-height: 2em;
+    margin-left: 50px;
+}
+
+.about {
+    margin-right: 350px;
+}
+
+.our-accommodations {
+    margin-right: 350px;
+}
+
+.about
+> ul {
+    list-style-type:none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.our-accommodations
+> ul {
+    list-style-type:none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.support
+> ul {
+    list-style-type:none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+
+/*version mobile*/
 @media (max-width: 768px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        border-style: none;
+        width: 100px;
+        margin: 0;
+    }
+    
+    .navbar
+        > ul {
+            padding: 0;
+            justify-content: center;
+        }
+
+    .navbar 
+        > ul
+        > li {
+            border-bottom: solid 3px #f2f2f2;
+            height: 75px;
+        }
+
+    .navbar 
+        > ul
+        > li:hover {
+            border-top: transparent;
+            border-bottom: solid 2px #0065fc;
+        }
+
+    #introduction {
+        margin: 0 0 0 20px;
+    }
+
+    .text-button-search {
+        display: none;
+    }
+
+    .search-button {
+        border-radius: 15px;
+        margin-left: -10px;
+    }
+
+    .search-icon {
+        margin: 0;
+        color: white;
+    }
+
+    .fa-search {
+        margin: 0;
+    }
+
+    .container-filter {
+        margin: 0;
+    }
+
+    .infos {
+        display: flex;
+        align-items: center;
+    }
+
+    #section1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .h2-section1 {
+        margin: 40px 0 20px 0;
+    }
+
+    .accommodations,
+    .most-popular {
+        width: 100%;
+    }
+
+    .accommodations {
+        background-color: transparent;
+        margin: 0 5px 0 5px;
+    }
+
+    .card-row {
+        display: flex;
+        width: 90%;
+        margin: 10px;
+    }
+
+    .most-popular {
+        border-radius: 0;
+    }
+
+    .see-more {
+        margin: 20px 0 0 0;
+    }
+
     #section2 {
         margin: 0 20px;
     }
@@ -625,9 +615,56 @@ form {
         > h4 {
             margin: 10px 0;
     }
+
+
+    .about,    
+    .our-accommodations,    
+    .support {
+        margin-right: 0;
+    }
 }
 
-@media (max-width: 992px) {
+
+/*version tablette*/
+@media (max-width: 993px) {
+    header {
+        margin-left: 20px;
+    }
+
+    #introduction {
+        margin: 0 0 0 20px;
+    }
+
+    .text-button-search {
+        display: none;
+    }
+
+    .search-button {
+        border-radius: 15px;
+        margin-left: -10px;
+    }
+
+    .search-icon {
+        margin: 0;
+        color: white;
+    }
+
+    .fa-search {
+        margin: 0;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    #section1 {
+        margin: 0 20px 0 0;
+    }
+
+    .star-stack-popular {
+        margin-top: 25px;
+    }
+
     #section2 {
         margin: 0 20px;
     }
@@ -661,58 +698,7 @@ form {
         > h4 {
             margin: 10px 0;
     }
-}
 
-/* footer */
-
-footer {
-    background-color:#F2F2F2;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    line-height: 2em;
-    padding: 20px 50px;
-    margin-top: 40px;
-}
-
-.about {
-    margin-right: 350px;
-}
-
-.our-accommodations {
-    margin-right: 350px;
-}
-
-.about
-> ul {
-    list-style-type:none;
-    margin: 20px 0;
-    padding: 0;
-}
-
-.our-accommodations
-> ul {
-    list-style-type:none;
-    margin: 20px 0;
-    padding: 0;
-}
-
-.support
-> ul {
-    list-style-type:none;
-    margin: 20px 0;
-    padding: 0;
-}
-
-@media (max-width: 768px) {
-    .about,    
-    .our-accommodations,    
-    .support {
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 992px) {
     .about,    
     .our-accommodations,    
     .support {
